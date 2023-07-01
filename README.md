@@ -1,22 +1,68 @@
-# Billing-System
+# Billing System
 
-This project provides a basic command-line billing system. The project contains items relating to a restaurant but it can be modified for other uses.
+The Billing System is a simple command-line application implemented in Java that allows you to manage a menu and generate bills based on user orders and quantities.
 
-**Interface.java**
+## Table of Contents
 
-This class provides a basic interface to the user to let them choose between adding a new item to the menu or printing a bill.
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-_METHODS INCLUDED: getInput(), doAsSaid(int choice)_
+## Features
 
-**Menu.java**
+- Add new items to the menu with their names and rates.
+- Display the current menu with item details.
+- Calculate and print bills based on user-selected orders and quantities.
+- Handle invalid input and provide a user-friendly interface.
 
-This class contains the variables and methods relating to the menu. It initializes the list of menu with some food items and lets the user add items to the menu. It also displays the menu to the user.
+## Prerequisites
 
-_METHODS INCLUDED: init(), addItem(), printMenu()_
+To run the Billing System, ensure that you have the following prerequisites installed on your system:
 
-**Bill.java**
+- Java Development Kit (JDK) 8 or higher
+- Java Runtime Environment (JRE) 8 or higher
 
-This class contains the variables and methods relating to the bill. It automates the process of calcualating the total price of one's orders and provides a detailed bill that shows the name of the item, quantity bought, amount per item and the total amount.
+## Installation
 
+1. Clone the repository or download the source code.
+2. Ensure that you have Java JDK and JRE installed on your system.
+3. Compile the Java source code files using the following command:
 
-_METHODS INCLUDED: inputOrdersAndQuantity(), printBill()_
+   ```
+   javac BillingSystem.java
+   ```
+
+## Usage
+
+1. Run the application by executing the following command:
+
+   ```
+   java BillingSystem
+   ```
+
+2. The application will display a menu with the available options:
+
+   ```
+   What do you want to do?
+   1. Add a new item to the menu
+   2. Calculate & print bill
+   3. Exit
+   Enter choice:
+   ```
+
+3. Choose one of the options by entering the corresponding number and pressing Enter:
+
+   - **Add a new item to the menu**: Enter the name and rate of the new item when prompted. The item will be added to the menu.
+   - **Calculate & print bill**: Enter the indexes of the items you want to order, separated by commas (e.g., `1,3`). Then, enter the quantity for each item. The application will calculate and print the bill.
+   - **Exit**: Choose this option to terminate the program.
+
+## Contributing
+
+Contributions to the Billing System project are always welcome. If you have any ideas, suggestions, or bug fixes, please create a pull request or open an issue.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
